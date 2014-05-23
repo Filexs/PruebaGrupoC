@@ -62,6 +62,11 @@
     <Compile Include="Fran.Designer.cs">
       <DependentUpon>Fran.cs</DependentUpon>
     </Compile>
+    <Compile Include="Northwind_2007DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Northwind_2007DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Pedro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +81,9 @@
     <EmbeddedResource Include="Fran.resx">
       <DependentUpon>Fran.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pedro.resx">
+      <DependentUpon>Pedro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -85,6 +93,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Northwind_2007DataSet.xsc">
+      <DependentUpon>Northwind_2007DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Northwind_2007DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Northwind_2007DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Northwind_2007DataSet.xss">
+      <DependentUpon>Northwind_2007DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +116,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Northwind 2007.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
